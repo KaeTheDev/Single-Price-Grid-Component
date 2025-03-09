@@ -1,0 +1,103 @@
+.community {
+    max-width: 350px; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+
+.community__header{
+    background-color: $white;  
+    padding: 25px; 
+}
+.community__title {
+    margin-bottom: 16px;
+}
+.community__subtitle{
+    margin-bottom: 16px;
+}
+.community__description{
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+.community__subscription {
+    background-color: $cyan;
+    padding: 30px; 
+}
+
+.community__subscription-title {
+    margin-bottom: 18px;
+    padding-top: 24px;
+}
+
+.community__price  {
+    margin-bottom: 8px;
+}
+
+.community__access {
+    margin-bottom: 26px;
+}
+.community__benefits {
+    background-color: $dark-cyan;
+}
+
+.community__signup-button {
+    background-color: $bright-yellow;
+    margin-bottom: 22px;
+    border-radius: 4px;
+    border: none;
+    padding: 12px;
+  width: calc(100% - 48px);
+}
+
+.community__benefits-title {
+    padding-left: 20px; 
+    padding-right: 20px; 
+    padding-top: 26px;
+}
+
+
+.community__benefits-list {
+    padding-bottom: 22px;
+    line-height: 22px;
+    padding: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .community {
+      max-width: 650px; 
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .community__header {
+      width: 100%; 
+      padding: 35px 40px;
+    }
+    
+    .community__subscription,
+    .community__benefits {
+      width: 50%; 
+      box-sizing: border-box; 
+      padding: 35px 40px;
+    }
+    
+    .community__subscription {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .community__benefits {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .community__benefits-list {
+      flex-grow: 1;
+    }
+    
+    .community__signup-button {
+      width: 100%; 
+    }
+  }

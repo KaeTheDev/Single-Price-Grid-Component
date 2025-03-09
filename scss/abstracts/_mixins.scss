@@ -1,0 +1,7 @@
+// Typography Mixin
+@mixin typography($font-family-primary, $size, $weight, $color) {
+    font-family: $font-family-primary;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+  }  
